@@ -1,0 +1,61 @@
+{
+  "name": "mcp-ts-stdio-nasa",
+  "version": "0.1.0",
+  "description": "TypeScript MCP server providing NASA API integrations for AI assistants",
+  "keywords": [
+    "mcp",
+    "nasa",
+    "api",
+    "ai-integration",
+    "typescript",
+    "model-context-protocol",
+    "astronomy",
+    "space"
+  ],
+  "author": "Jez (Jeremy Dawes) <jeremy@jezweb.net>",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "mcp-ts-stdio-nasa": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('dist/index.js', '755')\"",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "echo \"Tests coming soon\"",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "mcp:stdio": "node dist/index.js",
+    "mcp:inspect": "npx @modelcontextprotocol/inspector dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^16.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jezweb/mcp-ts-stdio-nasa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jezweb/mcp-ts-stdio-nasa/issues"
+  },
+  "homepage": "https://github.com/jezweb/mcp-ts-stdio-nasa#readme"
+}

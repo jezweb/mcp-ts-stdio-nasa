@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "nasa": {
+      "command": "npx",
+      "args": ["mcp-ts-stdio-nasa"],
+      "env": {
+        "NASA_API_KEY": "DEMO_KEY"
+      }
+    }
+  }
+}
