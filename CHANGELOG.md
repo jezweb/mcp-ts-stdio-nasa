@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.0] - 2025-08-10
 
+**🚀 Initial Release - Published to npm**
+
 ### Added
 - Initial release of MCP TypeScript NASA Server
 - STDIO transport support for MCP protocol
@@ -38,5 +40,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Example queries for each tool
 - Claude Desktop configuration guide
 - Development setup instructions
+
+### Deployment
+- Published to npm registry as `mcp-ts-stdio-nasa`
+- Available via npx: `npx mcp-ts-stdio-nasa`
+- GitHub repository: https://github.com/jezweb/mcp-ts-stdio-nasa
+- Package size: 18.7 kB (packed) / 72.4 kB (unpacked)
 
 [0.1.0]: https://github.com/jezweb/mcp-ts-stdio-nasa/releases/tag/v0.1.0

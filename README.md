@@ -1,8 +1,10 @@
 # MCP TypeScript NASA Server
 
 [![npm version](https://img.shields.io/npm/v/mcp-ts-stdio-nasa.svg)](https://www.npmjs.com/package/mcp-ts-stdio-nasa)
+[![npm downloads](https://img.shields.io/npm/dm/mcp-ts-stdio-nasa.svg)](https://www.npmjs.com/package/mcp-ts-stdio-nasa)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![MCP Version](https://img.shields.io/badge/MCP-1.0.0-blue)](https://modelcontextprotocol.io)
+[![GitHub](https://img.shields.io/github/stars/jezweb/mcp-ts-stdio-nasa?style=social)](https://github.com/jezweb/mcp-ts-stdio-nasa)
 
 A TypeScript-based MCP (Model Context Protocol) server that provides seamless integration with NASA's public APIs, enabling AI assistants to access space and astronomy data including APOD, Mars rover photos, Near-Earth Objects, space weather, and Earth imagery.
 
@@ -17,11 +19,13 @@ A TypeScript-based MCP (Model Context Protocol) server that provides seamless in
 
 ## 🚀 Quick Start
 
-### Run with NPX (No Installation)
+### Run with NPX (Recommended - No Installation Required)
 
 ```bash
 npx mcp-ts-stdio-nasa
 ```
+
+This command downloads and runs the latest version directly from npm.
 
 ### Install Globally
 
@@ -151,6 +155,14 @@ Get full-disc Earth images from the DSCOVR satellite.
 ```
 "Show me recent full Earth images from space"
 ```
+
+## 📝 Status
+
+**✅ Published and Working** - The package has been successfully published to npm and tested with Claude Desktop.
+
+- **Latest Version**: 0.1.0
+- **npm Package**: [mcp-ts-stdio-nasa](https://www.npmjs.com/package/mcp-ts-stdio-nasa)
+- **Installation**: Works via npx, global install, or as a dependency
 
 ## 💻 Development
 

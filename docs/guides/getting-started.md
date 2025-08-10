@@ -5,19 +5,18 @@ This guide will help you get the MCP TypeScript NASA Server up and running in mi
 ## Prerequisites
 
 - **Node.js** version 18 or higher
-- **npm** or **yarn** package manager
-- A text editor (VS Code recommended)
+- **npm** package manager (comes with Node.js)
 - (Optional) NASA API key from [https://api.nasa.gov/](https://api.nasa.gov/)
 
-## Quick Start (NPX)
+## Quick Start (NPX) - Recommended
 
-The fastest way to try the server:
+The fastest and easiest way to use the server:
 
 ```bash
 npx mcp-ts-stdio-nasa
 ```
 
-This will download and run the server immediately. However, for production use with Claude Desktop, you'll want to configure it properly.
+This command downloads and runs the latest version directly from npm. No installation needed!
 
 ## Installation Options
 
@@ -43,7 +42,7 @@ npm init -y
 npm install mcp-ts-stdio-nasa
 ```
 
-### Option 3: Development Setup
+### Option 3: Development Setup (For Contributors)
 
 ```bash
 # Clone the repository
@@ -58,6 +57,9 @@ npm run build
 
 # Run the server
 npm start
+
+# Or use MCP Inspector for testing
+npm run mcp:inspect
 ```
 
 ## Claude Desktop Configuration
