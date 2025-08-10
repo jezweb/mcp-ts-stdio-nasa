@@ -17,11 +17,13 @@ The MCP TypeScript NASA Server follows a clean, layered architecture that promot
 └────────────────┬────────────────────────┘
                  │
 ┌────────────────┴────────────────────────┐
-│            Tools Layer                   │
-│         (src/tools/*.ts)                 │
-│  - Tool definitions                      │
-│  - Input validation (Zod)                │
-│  - Response formatting                   │
+│     Tools, Resources & Prompts Layer     │
+│  Tools (src/tools/*.ts)                  │
+│  - Tool definitions & validation         │
+│  Resources (src/resources/*.ts)          │
+│  - URI-based data access                 │
+│  Prompts (src/prompts/*.ts)              │
+│  - Interaction templates                 │
 └────────────────┬────────────────────────┘
                  │
 ┌────────────────┴────────────────────────┐
@@ -43,9 +45,12 @@ The MCP TypeScript NASA Server follows a clean, layered architecture that promot
 ### 1. MCP Server (`src/index.ts`)
 
 The entry point that:
-- Initializes the MCP server with capabilities
+- Initializes the MCP server with capabilities (tools, resources, prompts)
 - Sets up STDIO transport for communication
-- Registers request handlers for listing and executing tools
+- Registers request handlers for:
+  - Listing and executing tools
+  - Listing and reading resources
+  - Listing and getting prompts
 - Manages the server lifecycle
 
 ### 2. Tools Layer (`src/tools/`)

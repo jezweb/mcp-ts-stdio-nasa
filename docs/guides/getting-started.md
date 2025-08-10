@@ -107,11 +107,21 @@ After saving the configuration, restart Claude Desktop for the changes to take e
 
 In Claude Desktop, try these queries to verify everything is working:
 
+### Tools
 1. **Test APOD**: "Show me today's NASA astronomy picture"
 2. **Test Mars Rovers**: "Get me some photos from the Perseverance rover"
 3. **Test NEO**: "Are there any asteroids passing Earth this week?"
 4. **Test Space Weather**: "Check for recent solar flares"
 5. **Test EPIC**: "Show me recent full Earth images"
+
+### Resources (v0.2.0+)
+1. **Test Config**: "Read the resource nasa://config"
+2. **Test APOD Resource**: "Show me nasa://apod/2024-12-25"
+3. **Test Rover Resource**: "Get nasa://rover/perseverance/latest"
+
+### Prompts (v0.2.0+)
+1. **Test Education**: "Use the explain-apod prompt for today"
+2. **Test Analysis**: "Run the space-weather-report prompt for 3 days"
 
 ## Environment Variables
 

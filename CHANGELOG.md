@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.2.0] - 2025-08-10
 
+**🎉 Resources & Prompts Release - Published to npm**
+
 ### Added
 - **Resources Feature**: URI-based data access
   - Static resources: config, missions, NEO today
@@ -67,4 +69,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub repository: https://github.com/jezweb/mcp-ts-stdio-nasa
 - Package size: 18.7 kB (packed) / 72.4 kB (unpacked)
 
+[0.2.0]: https://github.com/jezweb/mcp-ts-stdio-nasa/releases/tag/v0.2.0
 [0.1.0]: https://github.com/jezweb/mcp-ts-stdio-nasa/releases/tag/v0.1.0

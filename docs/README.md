@@ -27,7 +27,7 @@ Welcome to the comprehensive documentation for the MCP TypeScript NASA Server.
 
 ## 📦 Current Version
 
-- **Version**: 0.1.0
+- **Version**: 0.2.0
 - **Status**: Published and available on npm
 - **Last Updated**: 2025-08-10
 

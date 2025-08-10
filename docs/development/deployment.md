@@ -4,7 +4,7 @@ This guide covers how to deploy and publish the MCP TypeScript NASA Server.
 
 ## Current Status
 
-- **npm Package**: Published as `mcp-ts-stdio-nasa` v0.1.0
+- **npm Package**: Published as `mcp-ts-stdio-nasa` v0.2.0
 - **GitHub Repository**: https://github.com/jezweb/mcp-ts-stdio-nasa
 - **Package URL**: https://www.npmjs.com/package/mcp-ts-stdio-nasa
 
@@ -120,6 +120,7 @@ npm audit fix
 
 ### Version History
 
+- **v0.2.0** (2025-08-10): Added Resources and Prompts features
 - **v0.1.0** (2025-08-10): Initial release with 5 NASA API tools
 
 ## Troubleshooting
