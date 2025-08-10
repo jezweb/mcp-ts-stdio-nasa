@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2025-08-10
+
+### Added
+- **Resources Feature**: URI-based data access
+  - Static resources: config, missions, NEO today
+  - Dynamic resources with templates: APOD by date, rover photos
+- **Prompts Feature**: Pre-built interaction templates
+  - Educational prompts: explain-apod
+  - Analysis prompts: space-weather-report, asteroid-analysis
+- Full MCP capabilities support (tools, resources, prompts)
+
+### Changed
+- Updated server capabilities to include resources and prompts
+- Enhanced documentation with resource and prompt examples
+
+### Technical
+- Added `/src/resources/` module for resource management
+- Added `/src/prompts/` module for prompt templates
+- Updated request handlers for ListResources, ReadResource, ListPrompts, GetPrompt
+
 ## [0.1.0] - 2025-08-10
 
 **🚀 Initial Release - Published to npm**

@@ -10,10 +10,12 @@ A TypeScript-based MCP (Model Context Protocol) server that provides seamless in
 
 ## 🌟 Features
 
-- **🚀 5 NASA API Integrations**: APOD, Mars Rovers, NEO Feed, DONKI Space Weather, EPIC Earth Imagery
+- **🚀 5 NASA API Tools**: APOD, Mars Rovers, NEO Feed, DONKI Space Weather, EPIC Earth Imagery
+- **📚 Resources Support**: Access NASA data via URI-based resources (static & dynamic)
+- **💬 Prompts Templates**: Pre-built prompts for education and analysis
 - **📦 NPX Ready**: Run instantly with `npx mcp-ts-stdio-nasa`
 - **🔧 Type-Safe**: Full TypeScript implementation with Zod validation
-- **🎯 MCP Compliant**: Follows Model Context Protocol specification
+- **🎯 MCP Compliant**: Full Model Context Protocol specification support
 - **⚡ Easy Setup**: Works with Claude Desktop and other MCP clients
 - **🔑 API Key Support**: Use your own NASA API key or the demo key
 
@@ -156,11 +158,64 @@ Get full-disc Earth images from the DSCOVR satellite.
 "Show me recent full Earth images from space"
 ```
 
+## 📚 Resources
+
+Resources provide direct access to NASA data via URIs:
+
+### Static Resources
+- `nasa://config` - NASA API configuration and status
+- `nasa://missions/current` - List of current NASA missions
+- `nasa://neo/today` - Today's Near-Earth Objects
+
+### Dynamic Resources (with URI templates)
+- `nasa://apod/{date}` - APOD for specific date (e.g., `nasa://apod/2024-01-15`)
+- `nasa://rover/{rover}/latest` - Latest photos from Mars rovers
+
+**Example Usage:**
+```
+"Read the resource nasa://apod/2024-12-25"
+"Show me nasa://rover/perseverance/latest"
+```
+
+## 💬 Prompts
+
+Pre-configured prompts for common NASA data queries:
+
+### 1. `explain-apod` - Educational APOD Explanation
+**Parameters:**
+- `date` (optional): YYYY-MM-DD format
+- `audience` (optional): child, student, or expert
+
+**Example:**
+```
+"Use the explain-apod prompt for today with audience set to child"
+```
+
+### 2. `space-weather-report` - Space Weather Analysis
+**Parameters:**
+- `days` (optional): 1-7 days to analyze
+- `focus` (optional): solar-flares, cme, geomagnetic, or all
+
+**Example:**
+```
+"Generate a space-weather-report for the last 3 days focusing on solar flares"
+```
+
+### 3. `asteroid-analysis` - NEO Risk Assessment
+**Parameters:**
+- `timeframe` (optional): today, week, or month
+- `hazardous_only` (optional): true/false
+
+**Example:**
+```
+"Run asteroid-analysis for this week with hazardous_only true"
+```
+
 ## 📝 Status
 
 **✅ Published and Working** - The package has been successfully published to npm and tested with Claude Desktop.
 
-- **Latest Version**: 0.1.0
+- **Latest Version**: 0.2.0
 - **npm Package**: [mcp-ts-stdio-nasa](https://www.npmjs.com/package/mcp-ts-stdio-nasa)
 - **Installation**: Works via npx, global install, or as a dependency
 
